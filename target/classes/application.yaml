@@ -1,0 +1,7 @@
+spring:
+  application:
+     name: SocialBackend
+  data:
+    mongodb:
+      uri: mongodb+srv://AYAN:9DwyONlG508btOtH@datacluster.axdhi5z.mongodb.net/Dataset?retryWrites=true&w=majority
+      auto-index-creation: true

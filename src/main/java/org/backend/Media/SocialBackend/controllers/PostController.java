@@ -28,6 +28,11 @@ public class PostController {
 
     }
 
+    @GetMapping("/all")
+    public  List<Post> getALL(){
+        return postService.findAll();
+    }
+
     @PostMapping("/post")
     public ResponseEntity<?> data(@RequestParam("file") MultipartFile file, @ModelAttribute Post post){
         String name = SecurityContextHolder.getContext().getAuthentication().getName();
